@@ -19,13 +19,13 @@ Promise.all([p1, p2, p3]).then(values => console.log(values + 'values = array of
 //async/ await<br/>
 
 async function func(){
-    await anotherFunc1() // not calling another2 before another1 finishes
+    await anotherFunc1() // not calling another2 before another1 finishes<br/>
     anotherFunc2()
 }
 
 //async/ await with fetch<br/>
-async function funcWithFetch(){
-    const res = await fetch() // not calling data before res finishes
-    const data = await res.doSomthing() // not calling another2 before data finishes
+async function funcWithFetch(){<br/>
+    const res = await fetch() // not calling data before res finishes<br/>
+    const data = await res.doSomthing() // not calling another2 before data finishes<br/>
     anotherFunc2()
 }
