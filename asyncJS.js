@@ -66,3 +66,7 @@ async function funcWithFetch(){
 Promise.then({
     return anotherPromise()
 }).then().catch(err=>{})
+
+//Event Loop
+//Function Stack -> Web APIs -> Event Queue
+//Function Stack gets empty -> Event queue pop to Function Stack
